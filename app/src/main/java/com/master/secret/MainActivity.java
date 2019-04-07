@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     long[] pattern1 = {0, 200, 1000};
     long[] pattern2 = {0, 200, 1000, 200, 1000};
     long[] pattern3 = {0, 200, 1000, 200, 1000, 200, 1000};
-    long[] pat4 = {0, 200, 5000, 200, 1000, 200, 1000, 200, 1000};
+    long[] pat4 = {0, 200, 1000, 200, 1000, 200, 1000, 200, 1000};
     long[] pat5 = {0, 200, 1000, 200, 1000, 200, 1000, 200, 1000, 200, 1000};
     long[] pat6 = {0, 200, 1000, 200, 1000, 200, 1000, 200, 1000, 200, 1000, 200, 1000};
     long[] pat7 = {0, 200, 1000, 200, 1000, 200, 1000, 200, 1000, 200, 1000, 200, 1000, 200, 1000};
@@ -85,16 +85,8 @@ public class MainActivity extends AppCompatActivity {
         firebaseDatabase = FirebaseDatabase.getInstance();
         databaseReference = firebaseDatabase.getReference().child("messages");
         send = (Button) (findViewById(R.id.send));
-        remove=(Button)(findViewById(R.id.remove));
         editText = (EditText) (findViewById(R.id.editext));
         v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-        remove.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view)
-            {
-                rem();
-            }
-        });
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

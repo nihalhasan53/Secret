@@ -5,6 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:gravity="center"
+    android:background="@android:color/black"
     tools:context=".MainActivity">
 
     <EditText
@@ -12,17 +15,16 @@
         android:layout_height="wrap_content"
         android:hint="Enter any number"
         android:inputType="number"
+        android:textColor="@android:color/background_light"
+        android:backgroundTint="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"
         android:id="@+id/editext"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/oval"
         android:text="Send"
         android:id="@+id/send" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Remove Records"
-        android:id="@+id/remove"/>
 
 
 </LinearLayout>
