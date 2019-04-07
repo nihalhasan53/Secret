@@ -22,16 +22,11 @@ public class MainActivity extends AppCompatActivity {
     private DatabaseReference databaseReference;
     private ChildEventListener childEventListener;
     Button send;
-    int rem=0;
-    long[] pa1 = {1000, 200, 1000};
-    long[] pa2 = {1000, 200, 1000, 200, 1000};
-    long[] pa3 = {1000, 200, 1000, 200, 1000, 200, 1000};
-    long[] pa4 = {1000, 200, 1000, 200, 1000, 200, 1000, 200, 1000};
     EditText editText;
     long[] pattern1 = {0, 200, 1000};
     long[] pattern2 = {0, 200, 1000, 200, 1000};
     long[] pattern3 = {0, 200, 1000, 200, 1000, 200, 1000};
-    long[] pat4 = {0, 200, 1000, 200, 1000, 200, 1000, 200, 1000};
+    long[] pat4 = {0, 200, 5000, 200, 1000, 200, 1000, 200, 1000};
     long[] pat5 = {0, 200, 1000, 200, 1000, 200, 1000, 200, 1000, 200, 1000};
     long[] pat6 = {0, 200, 1000, 200, 1000, 200, 1000, 200, 1000, 200, 1000, 200, 1000};
     long[] pat7 = {0, 200, 1000, 200, 1000, 200, 1000, 200, 1000, 200, 1000, 200, 1000, 200, 1000};
